@@ -33,7 +33,7 @@ class MyImage {
     _pixels[index + 3] = color.alpha;
   }
 
-  Future<ui.Image> convertToUIImage() async {
+  Future<ui.Image> convertToUIImage() {
     Completer<ui.Image> c = Completer();
     ui.decodeImageFromPixels(_pixels, _width, _height, ui.PixelFormat.rgba8888,
         (ui.Image result) {
