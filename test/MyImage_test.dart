@@ -7,7 +7,7 @@ void main() {
   test('MyImage test', () async {
     const int w = 124;
     const int h = 97;
-    MyImage img = MyImage(w, h);
+    MyImage img = MyImage(w, h, Colors.black);
 
     img.fill(Colors.black);
     img.setPixel(10, 12, Colors.red);
