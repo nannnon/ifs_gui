@@ -62,7 +62,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: RawImage(image: _imgBuffer),
+      body: InteractiveViewer(
+        child: RawImage(image: _imgBuffer),
+        constrained: false,
+      ),
     );
   }
 }
