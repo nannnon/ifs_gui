@@ -8,6 +8,9 @@ class MyImage {
   final int _height;
   final Uint8List _pixels;
 
+  int get width => _width;
+  int get height => _height;
+
   MyImage(this._width, this._height, Color color)
       : _pixels = Uint8List(_width * _height * 4) {
     fill(color);

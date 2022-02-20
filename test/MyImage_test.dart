@@ -14,6 +14,8 @@ void main() {
     await img.convertToUIImage();
     ui.Image uiimg = await img.convertToUIImage();
 
+    expect(img.width, w);
+    expect(img.height, h);
     expect(uiimg.width, w);
     expect(uiimg.height, h);
   });
